@@ -50,7 +50,7 @@ func init() {
 	poolMap[8192] = newPool(8192)
 }
 
-// Get a buffer with size
+// Get return a buf without reset, len(buf) = size
 func Get(size int) []byte {
 	var p []byte
 
